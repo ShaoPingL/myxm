@@ -35,6 +35,7 @@ public class UserController{
     @RequestMapping("/insertUser")
     public String insert(User user){
         userService.insert(user);
+        System.out.println("测试提交");
         return "welcome";
     }
 }
